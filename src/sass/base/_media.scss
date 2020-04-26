@@ -1,0 +1,121 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 60px;
+        }
+        
+    }
+}
+
+@media(max-width: 991px) {
+    
+}
+
+@media(max-width: 767px) {
+    
+}
+
+@media(max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .promo {
+        padding: 0;
+        min-height: 400px;
+        &__wrapper {
+            align-items: center;
+            margin-top: 50px;
+        }
+        &__header {
+            font-size: 22px;
+            line-height: 0;
+        }
+        &__subheader {
+            font-size: 13px;
+            line-height: 10px;
+            margin-top: 17px;
+        }
+        &__icons {
+            margin-top: 30px;
+            width: 85%;
+        }
+        &__icon {
+            width: 85px;
+            font-size: 10px;
+            img {
+                margin-bottom: 10px;
+                height: 32px;
+            }
+        }
+        &__link {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    .header {
+        &__logo {
+            width: 160px;
+            margin-top: 16px;
+        }
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-size: 11px;
+            margin-top: 11px;
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    .button {
+        width: 100px;
+        height: 22px;
+        font-size: 9px;
+        margin-top: 5px;
+        &_main {
+            margin-top: 35px;
+            width: 210px;
+            height: 50px;
+            font-size: 12px;        
+        }
+    }
+    .title {
+        font-size: 15px;
+    }
+    .advantages {
+        padding: 40px 0 40px 0;
+        br {
+            display: block;
+        }
+        &__wrapper {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            margin-top: 26px;
+        }
+        &__subtitle {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+        &__descr {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+}
+
+
