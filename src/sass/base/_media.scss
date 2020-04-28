@@ -2,12 +2,6 @@
     .container {
         max-width: 80%;
     }
-    .promo {
-        &__wrapper {
-            margin-top: 60px;
-        }
-        
-    }
 }
 
 @media(max-width: 991px) {
@@ -15,7 +9,96 @@
 }
 
 @media(max-width: 767px) {
-    
+    .container {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+    .promo {
+        min-height: 550px;
+        padding: 21px 0;
+        background-position: 20% 50%;
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader {
+            font-size: 20px;
+            margin-top: 9px;
+        }
+        &__icons {
+            margin-top: 40px;
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__icon {
+            width: 90px;
+            font-size: 11px;
+            img {
+                height: 40px;
+                margin-bottom: 15px;
+            }
+        }
+        &__link {
+            margin-top: 18px;
+            font-size: 14px;       
+        }
+    }
+    .header {
+        &__logo {
+            width: 190px;
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 11px;  
+            }           
+        }
+        &__phone {
+            font-size: 14px;
+        }
+    }
+    .button {
+        width: 130px;
+        height: 25px;
+        font-size: 11px;
+        margin-top: 2px;
+        &_main {
+            margin-top: 50px;
+            width: 250px;
+            height: 45px;
+            font-size: 14px;        
+        }
+    }
+    .title {
+        font-size: 17px;
+    }
+    .advantages {
+        padding: 50px 0;
+        br {
+            display: block;
+        }
+        &__wrapper {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 97%;
+            margin-top: 26px;
+        }
+        &__subtitle {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+        &__descr {
+            margin-top: 5px;
+            font-size: 13px;
+        }
+    }
 }
 
 @media(max-width: 575px) {
@@ -26,12 +109,13 @@
     .promo {
         padding: 0;
         min-height: 400px;
+        background-position: 5% 50%;
         &__wrapper {
             align-items: center;
             margin-top: 50px;
         }
         &__header {
-            font-size: 22px;
+            font-size: 23px;
             line-height: 0;
         }
         &__subheader {
@@ -40,11 +124,12 @@
             margin-top: 17px;
         }
         &__icons {
+            justify-content: center;
             margin-top: 30px;
-            width: 85%;
+            width: 100%;
         }
         &__icon {
-            width: 85px;
+            width: 90px;
             font-size: 10px;
             img {
                 margin-bottom: 10px;
@@ -68,11 +153,6 @@
             font-size: 11px;
             margin-top: 11px;
         }
-        &__contacts {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
     }
     .button {
         width: 100px;
@@ -81,8 +161,8 @@
         margin-top: 5px;
         &_main {
             margin-top: 35px;
-            width: 210px;
-            height: 50px;
+            width: 250px;
+            height: 45px;
             font-size: 12px;        
         }
     }
@@ -90,29 +170,8 @@
         font-size: 15px;
     }
     .advantages {
-        padding: 40px 0 40px 0;
-        br {
-            display: block;
-        }
-        &__wrapper {
-            margin-top: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 100%;
-            margin-top: 26px;
-        }
-        &__subtitle {
-            margin-top: 6px;
-            font-size: 15px;
-        }
+        padding: 40px 0;
         &__descr {
-            margin-top: 5px;
             font-size: 12px;
         }
     }
